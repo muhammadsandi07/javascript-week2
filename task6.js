@@ -3,7 +3,7 @@ const divideAndSort = (angka) => {
   let result = []
   let y = []
   let reversed
-  for (let i = 0; i < 2; i++) {
+  for (let i = 0; i < s.length; i++) {
     let temp = s[i].split('')
     for (let j = 0; j < temp.length; j++) {
       y.push(Number(temp[j]))
