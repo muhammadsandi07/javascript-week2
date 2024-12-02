@@ -5,10 +5,8 @@ const divideAndSort = (angka) => {
   let reversed
   for (let i = 0; i < 2; i++) {
     let temp = s[i].split('')
-    console.log(temp, 'ini temp')
     for (let j = 0; j < temp.length; j++) {
       y.push(Number(temp[j]))
-      console.log(y, 'y')
       if (j === temp.length - 1) {
         reversed = y.sort((a, b) => a - b)
         result = [...result, ...reversed]
@@ -16,8 +14,9 @@ const divideAndSort = (angka) => {
         y = []
       }
     }
-    console.log(z)
+    console.log(result)
   }
+  return result
 }
 
-divideAndSort(5956560159466056)
+console.log(divideAndSort(5956560159466056))
